@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" type="image/x-icon" href="../Images/55.png">
+    <link rel="stylesheet" href="../Css/Styles.css">
+</head>
+<body style="background-color:rgb(37, 37, 37) ;">
+    
+    <div class="navbar">
+        <div class="row"><a href="../Html/Webpage.html" >MV</a> </div>
+        <div class="dropdown row-2">
+          <button class="dropbtn" onclick="myFunction()">File
+            <i class="fa fa-caret-down"></i>
+          </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">About Me</a>
+              <a href="../Html/Projects.html">Projects</a>
+              <a href="../Html/Contact_form.html">Contact</a>
+            </div>
+        </div> 
+      <div style="padding-left: 77%;">
+        <div class="row"><a href="mailto:maheknv@gmail.com"> maheknv@gmail.com</a></div>
+        <div class="row"><a href="https://www.instagram.com/mahek._.v/"><img src="../Images/Free Icon | Instagram.png" width="20rem" alt=""></a></div>
+        <div class="row"><a href=""><img src="../Images/Download premium vector of Mail icon vector about mail, envelope icon black, request, email icon, and mail symbol 533816.png" width="20rem" alt=""></a></div>
+      </div>
+    </div>
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
+    
+    <div class="sidebar" style="font-family:monospace;">
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Vynl Album</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 1. About</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 2. Mockups</a>
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Animation</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 1. Poku</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Posters</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Social Campaign</a>
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Typography</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 1. About</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 2. Fonts</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench" style="padding-left: 15% ;"></i> 3. Book</a>
+    </div>
+
+    <div style="margin-top: 5%; margin-left: 20% ; ">
+        
+        <a href="https://mahekvora.myportfolio.com"> <img src="../Images/55.png" width="170rem" alt=""></a>
+
+        <a href="../Javascript-Slider-Puzzle-Game-master/Slider Puzzle/Index.html"><img src="../Images/51.png" width="170rem" alt=""></a>
+
+        <a href="../Html/RPS.html"><img src="../Images/53.png" width="170rem" alt=""></a> 
+
+        <a href="../Html/Game.html"><img src="../Images/54.png" width="170rem" alt=""></a>
+
+        <div>
+        <button class="btn" id="open">
+            <img src="../Images/52.png" width="170rem" alt=""></button>
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                  <img src="../Images/Cat Meme Sticker for iOS & Android | GIPHY.gif" width="1000px" alt="" style="display: flex;
+                  align-items: center;
+                  justify-content:center;" >
+                  <button id="close" style="background-color: rgb(196, 224, 255);" >CLOSE</button>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        const open= document.getElementById('open');
+        const modal_container= document.getElementById('modal_container');
+        const close= document.getElementById('close');
+    
+        open.addEventListener('click', ()=> {
+          modal_container.classList.add('show');
+        });
+    
+        close.addEventListener('click', ()=> {
+          modal_container.classList.remove('show');
+        });
+    
+      </script>
+    
+    
+
+</body>
+</html>

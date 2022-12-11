@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"]["fusername"]["fcontactdetails"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+          }
+        }
+        </script>
+    <link rel="stylesheet" href="../Css/Styles.css">
+</head>
+<body style="background-color: rgb(37, 37, 37) ; font-family: monospace;">
+        <div class="navbar">
+            <div class="row"><a href="../Html/Webpage.html">MV</a> </div>
+            <div class="dropdown row-2">
+              <button class="dropbtn" onclick="myFunction()">File
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">About Me</a>
+                  <a href="../Html/Projects.html">Projects</a>
+                  <a href="../Html/Contact_form.html">Contact</a>
+                </div>
+            </div> 
+          <div style="padding-left: 77%;">
+            <div class="row"><a href="mailto:maheknv@gmail.com"> maheknv@gmail.com</a></div>
+            <div class="row"><a href="https://www.instagram.com/mahek._.v/"><img src="../Images/Free Icon | Instagram.png" width="20rem" alt=""></a></div>
+            <div class="row"><a href="../Html/Detail.html"><img src="../Images/Download premium vector of Mail icon vector about mail, envelope icon black, request, email icon, and mail symbol 533816.png" width="20rem" alt=""></a></div>
+          </div>
+        </div>
+    
+<p style="font-family: monospace; font-size: 30px; color: white;">Please fill in your details</p>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  <p style="font-family: monospace; font-size:15px ; color: white ;">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+  </p>
+  <p style="font-family: monospace; font-size:15px ; color: white ;">
+    Username: <input type="text" name="fusername">
+    <input type="submit" value="Submit">
+ </p>
+ <p style="font-family: monospace; font-size:15px ; color: white ;">
+    Conatct Details: <input type="text" name="fcontactdetails">
+    <input type="submit" value="Submit">
+    </p>
+</form>
+
+</body>
+</html>
